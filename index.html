@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <title> Advice generator app</title>
+
+  <style>
+    .attribution {
+      font-size: 15px;
+      text-align: center;
+      margin: 2.4rem 0;
+      color: rgb(181, 179, 179);
+    }
+
+    .attribution>a {
+      font-size: 18px;
+      text-decoration: none;
+      color: #C0EEE4;
+    }
+
+    .attribution>a:hover {
+      color: #407e76;
+    }
+  </style>
+</head>
+
+<body onload="ShowMsg()">
+  <div class="container">
+    <div id='msg'> </div>
+    <div class="adviceWrapper">
+      <div class="adviceNumber" id="adviceNumber"></div>
+      <div class="advice" id="advice"></div>
+      <div class="patternDesign">
+        <img src="/images/pattern-divider-desktop.svg" alt="" srcset="">
+      </div>
+
+      <button class="generator_Button" onclick="generator()">
+        <img src="/images/icon-dice.svg" alt="">
+      </button>
+    </div>
+    <div class="attribution">
+      Coded by <a href="https://www.twitter.com/nadeem__dev" target="_blank">Nadeem__dev</a>.
+    </div>
+
+  </div>
+  <script src="/app.js"></script>
+</body>
+
+
+</html>
